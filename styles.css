@@ -1,0 +1,212 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Container */
+.nsw-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Sidebar (Search & Filters) */
+.nsw-layout__sidebar {
+    width: 40%; /* Stretching sidebar to 40% for better balance */
+    min-width: 350px; /* Ensures it doesn’t get too small */
+    padding: 20px;
+    background: #f4f4f4;
+    border-right: 1px solid #ddd;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.search-container button {
+    padding: 10px;
+    background: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: darkblue;
+}
+
+/* Filters Section */
+.nsw-filters h2 {
+    margin-top: 0;
+}
+
+.nsw-form__fieldset {
+    margin-top: 15px;
+}
+
+/* Main Content (Search Results) */
+.nsw-layout__main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Search Results */
+.nsw-search-results {
+    margin-top: 20px;
+}
+
+.result-item {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 15px;
+    border: none;
+    background: navy;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.nsw-button {
+    background-color: #0058a3 !important; /* NSW Blue */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nsw-button:hover {
+    background-color: #00407f !important; /* Darker shade of blue */
+}
+.top-bar {
+    background-color: #0058a3; /* NSW Government Blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+.show-more-btn {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #0058a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.show-more-btn:hover {
+    background-color: #00407f;
+}
+.sidebar .nsw-button {
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+/* Increase padding and give a white background to the filters block */
+.nsw-filters {
+    padding: 20px;            /* Adds internal spacing */
+    background-color: #fff;   /* White background inside the sidebar */
+    border: 1px solid #ccc;   /* Subtle border */
+    border-radius: 4px;       /* Slightly rounded corners */
+    margin-bottom: 20px;      /* Space below filters block */
+}
+
+/* More spacing between the filter heading and checkboxes */
+.nsw-filters h2 {
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+
+/* Ensure each checkbox appears on its own line with extra space */
+.nsw-form__checkbox-label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+/* Add spacing below the date input, if needed */
+#eventDate {
+    margin-bottom: 10px; 
+}
+
+/* Space around the 'Apply Filters' button */
+#applyFilters {
+    margin-top: 10px; 
+    width: 100%;      /* Make the button full width, if desired */
+}
+
+#resetFilters {
+    margin-top: 10px; 
+    width: 100%;      /* Make the button full width, if desired */
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 50vw;     /* 50% of the viewport width */
+    margin-left: 0;  /* Left align */
+}
+
+
+
+.search-bar-container input.nsw-form__input {
+  display: inline-flex !important;
+  flex: 1;
+  width: auto !important;
+  min-width: 0;
+}
+
+.search-bar-container button.nsw-button {
+  display: inline-flex !important;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.filter-divider {
+  border: none;
+  border-top: 1px solid #ddd; /* Adjust color for a subtle line */
+  margin: 15px 0;           /* Vertical spacing above and below the line */
+}
+
+.nsw-filters .nsw-form__label {
+    margin-bottom: 15px; /* Adjust the value as needed */
+}
+
+.search-row p {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+

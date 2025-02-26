@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <!-- NSW Design System CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nsw-design-system@3/dist/css/main.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip Navigation for keyboard users -->
+  <a href="#mainContent" class="nsw-skip">Skip to main content</a>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    Department of Communities and Justice
+  </div>
+
+  <div class="nsw-container">
+    <!-- SEARCH ROW -->
+    <div class="search-row">
+      <h1>Search</h1>
+      <p>
+        You have been assigned the task of developing an accessible web page that retrieves event data from a JSON file, allowing users to search for events by event name and event date. The web page should align with WCAG (Web Content Accessibility Guidelines) standards to ensure accessibility for all users.
+      </p>
+      <div class="search-bar-container">
+        <!-- Visually hidden label for search input -->
+        <label for="searchBox" class="sr-only">Search</label>
+        <input type="text" id="searchBox" class="nsw-form__input" placeholder="Enter search term..." aria-label="Search term">
+        <button id="searchBtn" class="nsw-button">Search</button>
+      </div>
+    </div>
+    <!-- END SEARCH ROW -->
+
+    <div class="nsw-layout">
+      <!-- Left-hand Sidebar (Filters only) -->
+      <aside class="nsw-layout__sidebar" aria-label="Filters">
+        <div class="nsw-filters">
+          <h2>Filters</h2>
+          <hr class="filter-divider">
+
+          <!-- Event Name Multi-Select Checkboxes -->
+          <label class="nsw-form__label" for="eventNameCheckboxes">Event Name</label>
+          <div id="eventNameCheckboxes"></div>
+          <hr class="filter-divider">
+
+          <!-- Date Filter -->
+          <label class="nsw-form__label" for="eventDate">Date</label>
+          <input type="date" id="eventDate" class="nsw-form__input">
+
+          <!-- Apply and Reset Filters Buttons -->
+          <button id="applyFilters" class="nsw-button">Apply Filters</button>
+          <button id="resetFilters" class="nsw-button">Reset Filters</button>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main id="mainContent" class="nsw-layout__main" tabindex="-1">
+        <h2>Search Results</h2>
+        <!-- Results count display with aria-live for dynamic updates -->
+        <p id="resultsCount" aria-live="polite">Showing results 0 - 0 of 0 results</p>
+        <div id="resultsContainer" class="nsw-search-results" aria-live="polite"></div>
+        <hr class="filter-divider">
+        <!-- Pagination using NSW Design System pattern -->
+        <nav id="paginationContainer" class="nsw-pagination" aria-label="Pagination"></nav>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
