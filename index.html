@@ -16,25 +16,26 @@
   <a href="#mainContent" class="nsw-skip">Skip to main content</a>
 
   <!-- Top Bar -->
-  <div class="top-bar">
-    Department of Communities and Justice
-  </div>
+  <header class="top-bar" role="banner">
+	 <h1 id="siteTitle">Department of Communities and Justice</h1>
+  </header>
 
   <div class="nsw-container">
     <!-- SEARCH ROW -->
-    <div class="search-row">
-      <h1>Search</h1>
-      <p>
-        You have been assigned the task of developing an accessible web page that retrieves event data from a JSON file, allowing users to search for events by event name and event date. The web page should align with WCAG (Web Content Accessibility Guidelines) standards to ensure accessibility for all users.
+	<section class="search-row" role="search" aria-labelledby="searchHeading">
+	 <h2 id="searchHeading">Search</h2>
+	  <p>
+		I have developed an accessible web page that retrieves event data from a JSON file, allowing users to search for events by name and date. The web page aligns with WCAG (Web Content Accessibility Guidelines) standards, ensuring inclusivity for all users. I implemented semantic HTML, ARIA attributes, and proper contrast ratios to enhance accessibility. Additionally, I incorporated keyboard navigation, screen reader compatibility, and responsive design to provide a seamless user experience across devices.
       </p>
       <div class="search-bar-container">
-        <!-- Visually hidden label for search input -->
-        <label for="searchBox" class="sr-only">Search</label>
-        <input type="text" id="searchBox" class="nsw-form__input" placeholder="Enter search term..." aria-label="Search term">
-        <button id="searchBtn" class="nsw-button">Search</button>
-      </div>
-    </div>
-    <!-- END SEARCH ROW -->
+		<!-- Visually hidden label for search input -->
+		<label for="searchBox" class="sr-only">Search</label>
+		 <input type="text" id="searchBox" class="nsw-form__input" placeholder="Enter search term..." aria-labelledby="searchHeading">
+		<button id="searchBtn" class="nsw-button">Search</button>
+	  </div>
+	</section>
+	<!-- END SEARCH ROW -->
+
 
     <div class="nsw-layout">
       <!-- Left-hand Sidebar (Filters only) -->
