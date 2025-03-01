@@ -5,19 +5,29 @@ A responsive and accessible web application for searching event data with filter
 🚀 Features
 
 🔍 Search functionality for events using keywords.
+
 📅 Filter by event name and date.
+
 📄 Pagination for browsing search results efficiently.
+
 ♿ WCAG Accessibility Compliance, including ARIA landmarks and keyboard navigation.
+
 📱 Fully Responsive Design for desktop, tablet, and mobile devices.
+
 🎯 Reset Filters Button to clear all selections.
+
 ⏩ "Skip to Main Content" Link for keyboard users.
 
 🛠️ Technologies Used
 
 HTML5 (Semantic Markup)
+
 CSS3 (Responsive Design, WCAG Compliance)
+
 JavaScript (ES6) (DOM Manipulation, Fetch API)
+
 NSW Design System (UI Components & Styling)
+
 GitHub Pages (Free Deployment)
 
 💡 Future Enhancements
