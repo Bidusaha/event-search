@@ -1,4 +1,5 @@
 Event Search Web Page
+
 A responsive and accessible web application for searching event data with filtering and pagination, ensuring compliance with WCAG standards.
 
 🚀 Features
